@@ -60,7 +60,7 @@
     if (id === current) return;
     current = id;
     links.forEach(function (link) {
-      if (idFor(link) === id) link.setAttribute("aria-current", "true");
+      if (idFor(link) === id) link.setAttribute("aria-current", "page");
       else link.removeAttribute("aria-current");
     });
   }

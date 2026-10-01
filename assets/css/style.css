@@ -143,7 +143,7 @@ a:hover { color: var(--accent-2); }
 .brand:hover { color: var(--ink); }
 
 .nav { display: block; }
-@media (max-width: 44rem) { .nav { display: none; } }
+@media (max-width: 52rem) { .nav { display: none; } }
 
 .nav__list { display: flex; align-items: center; gap: 0; list-style: none; flex-wrap: wrap; }
 .nav__item { position: relative; }
@@ -152,7 +152,8 @@ a:hover { color: var(--accent-2); }
   display: inline-block;
   padding: .8rem .95rem;
   font-size: var(--t--1); font-weight: 500;
-  letter-spacing: .03em;
+  letter-spacing: .08em;
+  text-transform: uppercase;
   color: var(--ink-2);
   border-bottom: 2px solid transparent;
   transition: color .18s var(--ease), border-color .18s var(--ease);
@@ -174,18 +175,18 @@ a:hover { color: var(--accent-2); }
 .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
 .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-@media (min-width: 44.01rem) { .nav-toggle { display: none; } }
+@media (min-width: 52.01rem) { .nav-toggle { display: none; } }
 
 .mobile-nav {
   display: none; border-top: 1px solid var(--line);
   padding-block: var(--s3); background: var(--paper);
 }
 .mobile-nav[data-open="true"] { display: block; }
-@media (min-width: 44.01rem) { .mobile-nav { display: none !important; } }
+@media (min-width: 52.01rem) { .mobile-nav { display: none !important; } }
 .mobile-nav ul { list-style: none; }
 .mobile-nav > ul > li { border-bottom: 1px solid var(--line); }
 .mobile-nav > ul > li:last-child { border-bottom: 0; }
-.mobile-nav a { display: block; padding: .7rem .2rem; color: var(--ink); }
+.mobile-nav a { display: block; padding: .7rem .2rem; color: var(--ink); letter-spacing: .08em; text-transform: uppercase; }
 .mobile-nav ul ul a { padding-left: var(--s3); color: var(--ink-2); font-size: var(--t--1); }
 
 /* ---------- 6. HERO ------------------------------------------------------ */
@@ -585,10 +586,10 @@ a:hover { color: var(--accent-2); }
 
 /* --- The tab for the section being read. --- */
 .nav__link[aria-current="true"] {
-  color: var(--ink);
-  background: var(--paper-2);
+  color: var(--accent);
+  background: transparent;
   border-bottom-color: var(--accent);
-  border-radius: var(--radius) var(--radius) 0 0;
+  border-radius: 0;
 }
 .mobile-nav a[aria-current="true"] { color: var(--accent); font-weight: 600; }
 

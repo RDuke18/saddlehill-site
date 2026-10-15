@@ -224,13 +224,6 @@ a:hover { color: var(--accent-2); }
 .stat__label { margin-top: var(--s2); font-size: var(--t--1); color: var(--ink-3); max-width: 24rem; }
 
 .bio { display: grid; gap: var(--s4); }
-@media (min-width: 40rem) { .bio { grid-template-columns: 12rem 1fr; gap: var(--s5); } }
-.bio__portrait {
-  aspect-ratio: 3 / 4; background: var(--paper-3);
-  border: 1px solid var(--line); border-radius: var(--radius);
-  display: grid; place-items: center; text-align: center;
-  font-size: var(--t--1); color: var(--ink-3); padding: var(--s2);
-}
 .bio__name { margin-bottom: .2rem; }
 .bio__role { font-size: var(--t--1); letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-bottom: var(--s3); }
 
